@@ -1,0 +1,29 @@
+@import "../../../styles/variables/variables.module.scss";
+.navbar {
+	position: fixed;
+	top: 0;
+	background-color: transparent;
+	width: 100%;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+	ul {
+		display: flex;
+		gap: 30px;
+		li {
+			font-size: 14px;
+			font-weight: 700;
+			font-family: "Rubik", sans-serif;
+			color: $mainColor;
+		}
+		li:hover {
+			color: $secondaryColor;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+}

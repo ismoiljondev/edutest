@@ -1,0 +1,15 @@
+@import "../../styles/variables/variables.module.scss";
+@import "../../styles/variables/buttonMixin";
+.bluebutton {
+	@include btn();
+}
+
+.yellowbutton {
+	@include btn(
+		$bgcolor: $secondaryColor,
+		$color: $mainColor,
+		$transparent: $mainColor,
+		$hovercolor: $secondaryColor,
+		$hoverbgcolor: $mainColor
+	);
+}

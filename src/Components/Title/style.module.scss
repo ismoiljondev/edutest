@@ -1,0 +1,32 @@
+@import "../../styles/variables/variables.module.scss";
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 85px;
+	h2 {
+		font-size: 36px;
+		line-height: 30px;
+		font-weight: bold;
+		color: $mainColor;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 0px;
+		font-style: italic;
+		color: $tertiaryColor;
+	}
+}
+
+@media (max-width: 500px) {
+	.card {
+		margin-bottom: 40px;
+	}
+	.card__title {
+		font-size: 30px;
+		line-height: 28px;
+	}
+}

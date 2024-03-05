@@ -1,0 +1,15 @@
+.card {
+	width: 100%;
+	color: white;
+	background: rgb(0, 35, 71);
+	padding: 100px 0;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	@media (max-width: 770px) {
+		grid-template-columns: 1fr;
+	}
+}
