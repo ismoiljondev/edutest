@@ -1,5 +1,30 @@
 .showcase {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 50px;
 	height: 100vh;
 	width: 100%;
 	background-color: red;
+	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		p {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 40px;
+		}
+		&__btns {
+			display: flex;
+			gap: 20px;
+			@media (max-width: 400px) {
+				flex-direction: column;
+			}
+		}
+	}
 }
